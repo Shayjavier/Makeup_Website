@@ -1,0 +1,159 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Assets/Makeup.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Rest of your CSS remains unchanged */
+.NavigationBar {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.navigationlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navigationlist li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-weight:normal;
+    transition: color 0.3s;
+}
+
+.navigationlist li a:hover {
+    color: rgb(233, 150, 164);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.HEADER1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-weight: lighter;
+    transition: color 0.3s, font-weight 0.2s;
+    cursor: pointer;
+}
+
+.HEADER1:hover {
+    font-weight: normal;
+    color: rgb(233, 150, 164);
+}
+
+
+.image-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    text-align: center;
+    color: white;
+    max-width:400px;
+}
+
+.image-placeholder img {
+    width: 300px;  /* Set fixed width for all images */
+    height: 400px; /* Set fixed height for all images */
+    object-fit: cover; /* Ensure the image maintains aspect ratio and fills the space */
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.image-placeholder h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    transition: Color 0.3s;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.image-placeholder h1:hover {
+    color: rgb(233, 150, 164);
+}
+
+.image-placeholder p {
+    font-size: 16px;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.biography {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.biography h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.biography p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Center the iframe container */
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: calc(100vh - 50px); /* Adjust the height to leave space for navigation bar */
+    margin-top: 0px; /* Optional: Add margin to create space below navigation */
+}
+
+/* Optional: adjust iframe style */
+iframe {
+    width: 100%;              /* Ensure it's responsive */
+    max-width: 800px;         /* Set max-width */
+    height: 650px;            /* Set fixed height */
+    border: none;             /* Remove default iframe border */
+}
